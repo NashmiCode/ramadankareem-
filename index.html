@@ -3,26 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swipe Reveal</title>
+<title>Ramadan Card</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-
-  <!-- الفيديو في الأعلى (ظاهر أولاً) -->
+ 
+  <!-- الفيديو يظهر أولاً -->
   <div class="video-container" id="videoContainer">
-    <video src="Instagram__20260219_121549_.mp4" autoplay muted loop></video>
+    <video src="video.mp4" autoplay muted loop></video>
   </div>
 
-  <!-- الصورة بالخلف -->
-  <div class="card" id="card">
-    <img src="رمضان صوره.webp">
-  </div>
+  <!-- صورة البطاقة -->
+  <img src="ramadan-card.png" class="card">
 
   <h4 id="swipeText">اسحب لليمين →</h4>
 
+  <!-- زر الرسالة -->
+  <button id="showBtn">🌙 عرض التهنئة</button>
+
+  <!-- الرسالة -->
+  <div id="message">رمضان كريم 🌙<br>تقبل الله طاعاتكم 🤍</div>
+
+
 </div>
+
 
 <script src="script.js"></script>
 </body>
