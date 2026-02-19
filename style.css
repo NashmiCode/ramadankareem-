@@ -1,0 +1,49 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#111;
+  overflow:hidden;
+  direction:rtl;
+}
+
+.container{
+  position:relative;
+  width:350px;
+  height:500px;
+  overflow:hidden;
+}
+
+.card{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:2;
+  cursor:grab;
+  transition: transform 2.00s ease, opacity 2.00s ease;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+.video-container{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:1;
+  opacity:0;
+  transition: opacity 2.00s ease;
+}
+
+.video-container video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+}
